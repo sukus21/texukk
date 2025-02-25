@@ -27,7 +27,7 @@ var fNormalized = flag.Bool("normalize", false, "normalize texture coordinates (
 var fOut = flag.String("out", "", "output for atlas and texture coordinate file")
 
 func pathToName(pathName string) string {
-	illegal := []rune{'/', '\\', '.', '_', '-'}
+	illegal := []rune{'/', '\\', '.', '_', '-', ' '}
 	nextUpper := true
 	out := ""
 	lastPeriod := -1
